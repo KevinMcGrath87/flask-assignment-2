@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet", href = "{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div id="uDiv">
+        <div class = "container", style = "height:{{var1*100}}px; width:{{var2*100}}px">
+            {%for i in range(((var2)*((var1)/4))|int)%}
+                    <div class = "unit">
+                        <div class = "box1"></div>
+                        <div class = "box2"></div>
+                        <div class = "box2"></div>
+                        <div class = "box1"></div>
+                    </div>
+            {%endfor%}
+        </div>
+    </div>
+</body>
+</html>
